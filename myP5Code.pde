@@ -11,14 +11,35 @@ void draw(){
   strokeWeight(3);
 
   //💡⬇️⬇️⬇️💡 Your Code For This Unit Goes Here
-  ellipse(190,60,90,90); 
+ 
+ background(0,150,255)
+ 
+ // face
+ fill(255,255,255)
+ ellipse(190,60,90,90); 
     ellipse(170,40,10,10);
+    point(170,40);
     ellipse(210,40,10,10);
+    point(210,40);
+    fill(255,150,0);
     triangle(189,55,181,64,196,64);
-    
+    fill(255,255,255);
+    stroke(200,0,0);
+    arc(190,70,50,50,radians(0),radians(180));
+    stroke(0,0,0);
+
+// stomach
   ellipse(190,165,120,120);
-  ellipse(190,310,170,170);
-  
+    line(128,154,68,101);
+    line(250,154,310,101);
+  strokeWeight(9);  
+    point(188,127);
+    point(188,163);
+    point(188,199);
+
+// bottom
+  strokeWeight(3);
+    ellipse(190,310,170,170);
 
 }
 
